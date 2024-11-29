@@ -1,0 +1,128 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+
+properties:
+  assertions:
+    - resource: Microsoft.Windows.Developer/OsVersion
+      directives:
+        description: Verify min OS version requirement Windows 11 Version 24H2
+        allowPrerelease: true
+      settings:
+        MinVersion: '10.0.26200'
+  resources:
+  ########################################################################
+  # Windows Settings Section: Enable Dark Mode
+  ########################################################################
+  - resource: Microsoft.Windows.Developer/EnableDarkMode
+    directives:
+      description: Enable dark mode
+      allowPrerelease: true
+    settings:
+      Ensure: present # [Present, Absent]
+      # Use caution when setting `RestartExplorer: true` as this will force explorer to close.
+      RestartExplorer: true # Required to apply changes
+  ########################################################################
+  # Windows Feature Section: Hyper-V (Code is correct, but there is a bug with the DSC resource which produces the error "Class not registered")
+  # https://github.com/microsoft/winget-cli/issues/4264
+  ########################################################################
+  - resource: PSDscResources/WindowsOptionalFeature
+    directives:
+      description: Enable Hyper-V
+    settings:
+      Ensure: present # [Present, Absent]
+      Name: Microsoft-Hyper-V-All
+  ########################################################################
+  # Winget Section: Install VS-Code
+  ########################################################################
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    id: install-vs-code
+    directives:
+      description: Install Microsoft Visual Studio Code
+      allowPrerelease: true
+    settings:
+      id: Microsoft.VisualStudioCode
+      source: winget
+      Ensure: Present
+  - resource: Microsoft.VSCode.Dsc/VSCodeExtension
+    id: install_vscode-yaml
+    dependsOn:
+      - install-vs-code
+    directives:
+      description: Install YAML extension for VSCode
+      allowPrerelease: true
+    settings:
+      Name: redhat.vscode-yaml
+      Exist: true
+  ########################################################################
+  # PS Section: Install PowerShell Modules
+  ########################################################################
+  - resource: PowerShellModule/PSModuleResource
+    id: install-microsoft.graph
+    directives:
+      description: Install MS Graph module
+      allowPrerelease: true
+    settings:
+      Module_Name: microsoft.graph
+      Ensure: Present
+  ########################################################################
+  # Winget Section: Install Notepad++
+  ########################################################################
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Installing Notepad++.Notepad++
+      allowPrerelease: true
+      securityContext: current
+    settings:
+      id: "Notepad++.Notepad++"
+      source: winget
+    id: Notepad++.Notepad++
+  ########################################################################
+  # Winget Section: Install PowerToys
+  ########################################################################
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Installing Microsoft.PowerToys
+      allowPrerelease: true
+      securityContext: current
+    settings:
+      id: "Microsoft.PowerToys"
+      source: winget
+    id: Microsoft.PowerToys
+  - resource: PowerToysConfigure
+    directives:
+      description: Configure PowerToys
+    settings:
+      ShortcutGuide:
+        Enabled: false
+        OverlayOpacity: 1
+      FancyZones:
+        Enabled: true
+        FancyzonesEditorHotkey: "Shift+Ctrl+Alt+F"
+  ########################################################################
+  # MSStore Section: Install Microsoft Company Portal
+  ########################################################################
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Installing Microsoft Company Portal
+      allowPrerelease: true
+      securityContext: current
+    settings:
+      id: "9WZDNCRFJ3PZ"
+      source: msstore
+    id: 9WZDNCRFJ3PZ
+  ########################################################################
+  # Powershell Section: Check Autostart for OneDrive
+  ########################################################################
+  - resource: PSDscResources/Script
+    id: OneDrive-Autostart
+    directives:
+      description: Autostart OneDrive
+      allowPrerelease: true
+    settings:
+      GetScript: |
+        # Your custom PowerShell code to check app configuration
+      TestScript: |
+        If( (Get-Item HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run).property -contains "OneDrive" ){ return $TRUE } else{ return $FALSE }
+      SetScript: |
+        # PowerShell script commands to install VSCode extensions
+        New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Name "OneDrive" -Value "C:\Program Files\Microsoft OneDrive\OneDrive.exe -background"  
+  configurationVersion: 0.2.0
