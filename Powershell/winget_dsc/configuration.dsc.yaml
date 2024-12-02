@@ -1,6 +1,9 @@
 # yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
 
 properties:
+  ########################################################################
+  # Windows assertion Section: Defines the conditions that must be met for a configuration to apply
+  ########################################################################
   assertions:
     - resource: Microsoft.Windows.Developer/OsVersion
       directives:
@@ -8,9 +11,12 @@ properties:
         allowPrerelease: true
       settings:
         MinVersion: '10.0.26200'
+  ########################################################################
+  # Windows resources Section: Defines the resources that are being configured
+  ########################################################################
   resources:
   ########################################################################
-  # Windows Settings Section: Enable Dark Mode
+  # Windows Settings: Enable Dark Mode
   ########################################################################
   - resource: Microsoft.Windows.Developer/EnableDarkMode
     directives:
@@ -21,7 +27,7 @@ properties:
       # Use caution when setting `RestartExplorer: true` as this will force explorer to close.
       RestartExplorer: true # Required to apply changes
   ########################################################################
-  # Windows Feature Section: Hyper-V (Code is correct, but there is a bug with the DSC resource which produces the error "Class not registered")
+  # Windows Feature: Hyper-V (Code is correct, but there is a bug with the DSC resource which produces the error "Class not registered")
   # https://github.com/microsoft/winget-cli/issues/4264
   ########################################################################
   - resource: PSDscResources/WindowsOptionalFeature
@@ -31,7 +37,7 @@ properties:
       Ensure: present # [Present, Absent]
       Name: Microsoft-Hyper-V-All
   ########################################################################
-  # Winget Section: Install VS-Code
+  # Winget: Install VS-Code & YAML extension
   ########################################################################
   - resource: Microsoft.WinGet.DSC/WinGetPackage
     id: install-vs-code
@@ -53,7 +59,7 @@ properties:
       Name: redhat.vscode-yaml
       Exist: true
   ########################################################################
-  # PS Section: Install PowerShell Modules
+  # Powershell: Install PowerShell Modules
   ########################################################################
   - resource: PowerShellModule/PSModuleResource
     id: install-microsoft.graph
@@ -64,41 +70,7 @@ properties:
       Module_Name: microsoft.graph
       Ensure: Present
   ########################################################################
-  # Winget Section: Install Notepad++
-  ########################################################################
-  - resource: Microsoft.WinGet.DSC/WinGetPackage
-    directives:
-      description: Installing Notepad++.Notepad++
-      allowPrerelease: true
-      securityContext: current
-    settings:
-      id: "Notepad++.Notepad++"
-      source: winget
-    id: Notepad++.Notepad++
-  ########################################################################
-  # Winget Section: Install PowerToys
-  ########################################################################
-  - resource: Microsoft.WinGet.DSC/WinGetPackage
-    directives:
-      description: Installing Microsoft.PowerToys
-      allowPrerelease: true
-      securityContext: current
-    settings:
-      id: "Microsoft.PowerToys"
-      source: winget
-    id: Microsoft.PowerToys
-  - resource: PowerToysConfigure
-    directives:
-      description: Configure PowerToys
-    settings:
-      ShortcutGuide:
-        Enabled: false
-        OverlayOpacity: 1
-      FancyZones:
-        Enabled: true
-        FancyzonesEditorHotkey: "Shift+Ctrl+Alt+F"
-  ########################################################################
-  # MSStore Section: Install Microsoft Company Portal
+  # MSStore: Install Microsoft Company Portal with Winget
   ########################################################################
   - resource: Microsoft.WinGet.DSC/WinGetPackage
     directives:
@@ -110,7 +82,7 @@ properties:
       source: msstore
     id: 9WZDNCRFJ3PZ
   ########################################################################
-  # Powershell Section: Check Autostart for OneDrive
+  # Powershell Script: Check Autostart for OneDrive
   ########################################################################
   - resource: PSDscResources/Script
     id: OneDrive-Autostart
@@ -125,4 +97,7 @@ properties:
       SetScript: |
         # PowerShell script commands to install VSCode extensions
         New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Name "OneDrive" -Value "C:\Program Files\Microsoft OneDrive\OneDrive.exe -background"  
+  ########################################################################
+  # Configuration Version: Defines the version of the configuration
+  ########################################################################
   configurationVersion: 0.2.0
