@@ -1,5 +1,5 @@
 # CIS Benchmark for Intune
 
-Mozilla Firefox ESR CIS Benchmark 1.0.0 Configuration policies for Intune<br>
+CIS Microsoft Office Enterprise Benchmark v 1.2.0 - Office Mashine<br>
 CIS Level 1<br>
-Firefox admx Version 6.7 [Firefox Policy templates](https://github.com/mozilla/policy-templates/releases)
+Built-in Intune policies for Office 2016 (Mashine)
