@@ -1,0 +1,2222 @@
+﻿{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
+    "createdDateTime": "2025-02-21T18:33:27.4323225Z",
+    "creationSource": null,
+    "description": "CIS Microsoft Edge Benchmark v 3.0.0 policies for Intune\nCIS Level 2",
+    "lastModifiedDateTime": "2025-02-21T19:28:08.839924Z",
+    "name": "CIS Lvl 2 Microsoft Edge Benchmark v 3.0.0",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 141,
+    "technologies": "mdm",
+    "id": "bda2a02c-8592-449b-b7a4-118a37260d90",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    },
+    "settings": [
+      {
+        "id": "0",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_adssettingforintrusiveadssites",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_adssettingforintrusiveadssites_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_adssettingforintrusiveadssites_adssettingforintrusiveadssites",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_adssettingforintrusiveadssites_adssettingforintrusiveadssites_2",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "1",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgeupdates.2~policy~microsoft_edge_downloadrestrictions",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgeupdates.2~policy~microsoft_edge_downloadrestrictions_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgeupdates.2~policy~microsoft_edge_downloadrestrictions_downloadrestrictions",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edgeupdates.2~policy~microsoft_edge_downloadrestrictions_downloadrestrictions_1",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "2",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev101~policy~microsoft_edge_edgeassetdeliveryserviceenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev101~policy~microsoft_edge_edgeassetdeliveryserviceenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "3",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_allowfileselectiondialogs",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_allowfileselectiondialogs_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "4",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_mediaroutercastallowallips",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_mediaroutercastallowallips_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "5",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev104~policy~microsoft_edge_importoneachlaunch",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev104~policy~microsoft_edge_importoneachlaunch_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "6",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_importautofillformdata",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_importautofillformdata_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "7",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_importbrowsersettings",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_importbrowsersettings_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "8",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_importhomepage",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_importhomepage_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "9",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_importpaymentinfo",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_importpaymentinfo_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "10",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_importsavedpasswords",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_importsavedpasswords_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "11",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_importsearchengine",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_importsearchengine_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "12",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_enterprisehardwareplatformapienabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_enterprisehardwareplatformapienabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "13",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_audiocaptureallowed",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_audiocaptureallowed_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "14",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_videocaptureallowed",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_videocaptureallowed_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "15",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_screencaptureallowed",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_screencaptureallowed_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "16",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge_personalizationreportingenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge_personalizationreportingenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "17",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_browsernetworktimequeriesenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_browsernetworktimequeriesenabled_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "18",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev93~policy~microsoft_edge_remotedebuggingallowed",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev93~policy~microsoft_edge_remotedebuggingallowed_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "19",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_audiosandboxenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_audiosandboxenabled_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "20",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev92~policy~microsoft_edge_internetexplorerintegrationreloadiniemodeallowed",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev92~policy~microsoft_edge_internetexplorerintegrationreloadiniemodeallowed_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "21",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_userfeedbackallowed",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_userfeedbackallowed_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "22",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_clickonceenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_clickonceenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "23",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_directinvokeenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_directinvokeenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "24",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_sslerroroverrideallowed",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_sslerroroverrideallowed_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "25",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge_paymentmethodqueryenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge_paymentmethodqueryenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "26",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev96~policy~microsoft_edge_autolaunchprotocolscomponentenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev96~policy~microsoft_edge_autolaunchprotocolscomponentenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "27",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_autoimportatfirstrun",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_autoimportatfirstrun_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_autoimportatfirstrun_autoimportatfirstrun",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_autoimportatfirstrun_autoimportatfirstrun_4",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "28",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev117~policy~microsoft_edge_internetexplorerintegrationzoneidentifiermhtfileallowed",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev117~policy~microsoft_edge_internetexplorerintegrationzoneidentifiermhtfileallowed_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "29",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_blockthirdpartycookies",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_blockthirdpartycookies_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "30",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_trackingprevention",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_trackingprevention_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_trackingprevention_trackingprevention",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_trackingprevention_trackingprevention_2",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "31",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_browsersignin",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_browsersignin_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "32",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~googlecast_enablemediarouter",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~googlecast_enablemediarouter_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "33",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_clearbrowsingdataonexit",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_clearbrowsingdataonexit_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "34",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_clearcachedimagesandfilesonexit",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_clearcachedimagesandfilesonexit_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "35",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev111~policy~microsoft_edge_internetexplorermodecleardataonexitenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev111~policy~microsoft_edge_internetexplorermodecleardataonexitenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "36",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev115~policy~microsoft_edge_composeinlineenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev115~policy~microsoft_edge_composeinlineenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "37",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev104~policy~microsoft_edge_browsercodeintegritysetting",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev104~policy~microsoft_edge_browsercodeintegritysetting_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev104~policy~microsoft_edge_browsercodeintegritysetting_browsercodeintegritysetting",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edgev104~policy~microsoft_edge_browsercodeintegritysetting_browsercodeintegritysetting_2",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "38",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_inprivatemodeavailability",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_inprivatemodeavailability_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_inprivatemodeavailability_inprivatemodeavailability",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_inprivatemodeavailability_inprivatemodeavailability_1",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "39",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_configureonlinetexttospeech",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_configureonlinetexttospeech_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "40",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev99~policy~microsoft_edge_relatedmatchescloudserviceenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev99~policy~microsoft_edge_relatedmatchescloudserviceenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "41",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev87~policy~microsoft_edge_speechrecognitionenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev87~policy~microsoft_edge_speechrecognitionenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "42",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev79diff~policy~microsoft_edge_hstspolicybypasslist",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev79diff~policy~microsoft_edge_hstspolicybypasslist_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "43",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_synctypeslistdisabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_synctypeslistdisabled_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_synctypeslistdisabled_synctypeslistdisableddesc",
+                "settingInstanceTemplateReference": null,
+                "simpleSettingCollectionValue": [
+                  {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                    "settingValueTemplateReference": null,
+                    "value": "passwords"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "44",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_configureshare",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_configureshare_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_configureshare_configureshare",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_configureshare_configureshare_1",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "45",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev96~policy~microsoft_edge_internetexplorerintegrationcomplexnavdatatypes",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev96~policy~microsoft_edge_internetexplorerintegrationcomplexnavdatatypes_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev96~policy~microsoft_edge_internetexplorerintegrationcomplexnavdatatypes_internetexplorerintegrationcomplexnavdatatypes",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edgev96~policy~microsoft_edge_internetexplorerintegrationcomplexnavdatatypes_internetexplorerintegrationcomplexnavdatatypes_0",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "46",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge~contentsettings_filesystemreadaskforurls",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge~contentsettings_filesystemreadaskforurls_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "47",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge~contentsettings_defaultinsecurecontentsetting",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge~contentsettings_defaultinsecurecontentsetting_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge~contentsettings_defaultinsecurecontentsetting_defaultinsecurecontentsetting",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge~contentsettings_defaultinsecurecontentsetting_defaultinsecurecontentsetting_2",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "48",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev93~policy~microsoft_edge~contentsettings_defaultjavascriptjitsetting",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev93~policy~microsoft_edge~contentsettings_defaultjavascriptjitsetting_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev93~policy~microsoft_edge~contentsettings_defaultjavascriptjitsetting_defaultjavascriptjitsetting",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edgev93~policy~microsoft_edge~contentsettings_defaultjavascriptjitsetting_defaultjavascriptjitsetting_2",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "49",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge~contentsettings_defaultfilesystemreadguardsetting",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge~contentsettings_defaultfilesystemreadguardsetting_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge~contentsettings_defaultfilesystemreadguardsetting_defaultfilesystemreadguardsetting",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge~contentsettings_defaultfilesystemreadguardsetting_defaultfilesystemreadguardsetting_2",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "50",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge~contentsettings_defaultfilesystemwriteguardsetting",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge~contentsettings_defaultfilesystemwriteguardsetting_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge~contentsettings_defaultfilesystemwriteguardsetting_defaultfilesystemwriteguardsetting",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge~contentsettings_defaultfilesystemwriteguardsetting_defaultfilesystemwriteguardsetting_2",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "51",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_defaultwebbluetoothguardsetting",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_defaultwebbluetoothguardsetting_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_defaultwebbluetoothguardsetting_defaultwebbluetoothguardsetting",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_defaultwebbluetoothguardsetting_defaultwebbluetoothguardsetting_2",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "52",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev100~policy~microsoft_edge~contentsettings_defaultwebhidguardsetting",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev100~policy~microsoft_edge~contentsettings_defaultwebhidguardsetting_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev100~policy~microsoft_edge~contentsettings_defaultwebhidguardsetting_defaultwebhidguardsetting",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edgev100~policy~microsoft_edge~contentsettings_defaultwebhidguardsetting_defaultwebhidguardsetting_2",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "53",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev110~policy~microsoft_edge~contentsettings_defaultautomaticdownloadssetting",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev110~policy~microsoft_edge~contentsettings_defaultautomaticdownloadssetting_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev110~policy~microsoft_edge~contentsettings_defaultautomaticdownloadssetting_defaultautomaticdownloadssetting",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edgev110~policy~microsoft_edge~contentsettings_defaultautomaticdownloadssetting_defaultautomaticdownloadssetting_2",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "54",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_defaultgeolocationsetting",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_defaultgeolocationsetting_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_defaultgeolocationsetting_defaultgeolocationsetting",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_defaultgeolocationsetting_defaultgeolocationsetting_2",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "55",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev116~policy~microsoft_edge~contentsettings_defaultthirdpartystoragepartitioningsetting",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev116~policy~microsoft_edge~contentsettings_defaultthirdpartystoragepartitioningsetting_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev116~policy~microsoft_edge~contentsettings_defaultthirdpartystoragepartitioningsetting_defaultthirdpartystoragepartitioningsetting",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edgev116~policy~microsoft_edge~contentsettings_defaultthirdpartystoragepartitioningsetting_defaultthirdpartystoragepartitioningsetting_2",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "56",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_backgroundmodeenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_backgroundmodeenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "57",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_experimentationandconfigurationservicecontrol",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_experimentationandconfigurationservicecontrol_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_experimentationandconfigurationservicecontrol_experimentationandconfigurationservicecontrol",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_experimentationandconfigurationservicecontrol_experimentationandconfigurationservicecontrol_0",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "58",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev92~policy~microsoft_edge_headlessmodeenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev92~policy~microsoft_edge_headlessmodeenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "59",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge_defaultserialguardsetting",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge_defaultserialguardsetting_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge_defaultserialguardsetting_defaultserialguardsetting",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge_defaultserialguardsetting_defaultserialguardsetting_2",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "60",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_overridesecurityrestrictionsoninsecureorigin",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_overridesecurityrestrictionsoninsecureorigin_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "61",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge_defaultsensorssetting",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge_defaultsensorssetting_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge_defaultsensorssetting_defaultsensorssetting",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge_defaultsensorssetting_defaultsensorssetting_2",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "62",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_deletedataonmigration",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_deletedataonmigration_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "63",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_savingbrowserhistorydisabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_savingbrowserhistorydisabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "64",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_syncdisabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_syncdisabled_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "65",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge_dnsinterceptionchecksenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge_dnsinterceptionchecksenabled_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "66",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev120~policy~microsoft_edge_edge3pserptelemetryenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev120~policy~microsoft_edge_edge3pserptelemetryenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "67",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev117~policy~microsoft_edge_edgewalletetreeenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev117~policy~microsoft_edge_edgewalletetreeenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "68",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_autofilladdressenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_autofilladdressenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "69",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_autofillcreditcardenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_autofillcreditcardenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "70",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev95~policy~microsoft_edge_browserlegacyextensionpointsblockingenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev95~policy~microsoft_edge_browserlegacyextensionpointsblockingenabled_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "71",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_componentupdatesenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_componentupdatesenabled_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "72",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev112~policy~microsoft_edge_cryptowalletenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev112~policy~microsoft_edge_cryptowalletenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "73",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_allowdeletingbrowserhistory",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_allowdeletingbrowserhistory_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "74",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev114~policy~microsoft_edge_discoverpagecontextenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev114~policy~microsoft_edge_discoverpagecontextenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "75",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev104~policy~microsoft_edge_edgeedropenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev104~policy~microsoft_edge_edgeedropenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "76",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev98~policy~microsoft_edge_edgefollowenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev98~policy~microsoft_edge_edgefollowenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "77",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_globallyscopehttpauthcacheenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_globallyscopehttpauthcacheenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "78",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_browserguestmodeenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_browserguestmodeenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "79",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_networkpredictionoptions",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_networkpredictionoptions_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_networkpredictionoptions_networkpredictionoptions",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_networkpredictionoptions_networkpredictionoptions_2",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "80",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_browseraddprofileenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_browseraddprofileenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "81",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev125~policy~microsoft_edge_qrcodegeneratorenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev125~policy~microsoft_edge_qrcodegeneratorenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "82",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_resolvenavigationerrorsusewebservice",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_resolvenavigationerrorsusewebservice_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "83",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_searchsuggestenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_searchsuggestenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "84",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_commandlineflagsecuritywarningsenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_commandlineflagsecuritywarningsenabled_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "85",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_siteperprocess",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_siteperprocess_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "86",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev113~policy~microsoft_edge_tabservicesenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev113~policy~microsoft_edge_tabservicesenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "87",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev117~policy~microsoft_edge_searchbarallowed",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev117~policy~microsoft_edge_searchbarallowed_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "88",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_translateenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_translateenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "89",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev117~policy~microsoft_edge_uploadfromphoneenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev117~policy~microsoft_edge_uploadfromphoneenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "90",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_forceephemeralprofiles",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_forceephemeralprofiles_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "91",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge_insecureformswarningsenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge_insecureformswarningsenabled_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "92",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev122~policy~microsoft_edge_aigenthemesenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev122~policy~microsoft_edge_aigenthemesenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "93",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_forcebingsafesearch",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_forcebingsafesearch_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_forcebingsafesearch_forcebingsafesearch",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_forcebingsafesearch_forcebingsafesearch_1",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "94",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_forcegooglesafesearch",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_forcegooglesafesearch_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "95",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev98~policy~microsoft_edge_enhancesecuritymode",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev98~policy~microsoft_edge_enhancesecuritymode_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev98~policy~microsoft_edge_enhancesecuritymode_enhancesecuritymode",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edgev98~policy~microsoft_edge_enhancesecuritymode_enhancesecuritymode_1",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "96",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev107~policy~microsoft_edge_enhancesecuritymodebypassintranet",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev107~policy~microsoft_edge_enhancesecuritymodebypassintranet_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "97",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev93~policy~microsoft_edge~experimentation_featureflagoverridescontrol",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev93~policy~microsoft_edge~experimentation_featureflagoverridescontrol_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev93~policy~microsoft_edge~experimentation_featureflagoverridescontrol_featureflagoverridescontrol",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edgev93~policy~microsoft_edge~experimentation_featureflagoverridescontrol_featureflagoverridescontrol_0",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "98",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge~extensions_blockexternalextensions",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge~extensions_blockexternalextensions_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "99",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~extensions_extensionsettings",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~extensions_extensionsettings_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~extensions_extensionsettings_extensionsettings",
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                  "settingValueTemplateReference": null,
+                  "value": "*"
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "100",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev117~policy~microsoft_edge~edgegames_gamermodeenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev117~policy~microsoft_edge~edgegames_gamermodeenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "101",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge_hidefirstrunexperience",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge_hidefirstrunexperience_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "102",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev88.0.705.23~policy~microsoft_edge~httpauthentication_basicauthoverhttpenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev88.0.705.23~policy~microsoft_edge~httpauthentication_basicauthoverhttpenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "103",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~httpauthentication_allowcrossoriginauthprompt",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~httpauthentication_allowcrossoriginauthprompt_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "104",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~httpauthentication_authschemes",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~httpauthentication_authschemes_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~httpauthentication_authschemes_authschemes",
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                  "settingValueTemplateReference": null,
+                  "value": "ntlm, negotiate"
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "105",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev107~policy~microsoft_edge~identity_linkedaccountenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev107~policy~microsoft_edge~identity_linkedaccountenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "106",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev103~policy~microsoft_edge~identity_guidedswitchenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev103~policy~microsoft_edge~identity_guidedswitchenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "107",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev98~policy~microsoft_edge_inappsupportenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev98~policy~microsoft_edge_inappsupportenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "108",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev91~policy~microsoft_edge_mathsolverenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev91~policy~microsoft_edge_mathsolverenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "109",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev103~policy~microsoft_edge_livecaptionsallowed",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev103~policy~microsoft_edge_livecaptionsallowed_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "110",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge_webrtclocalipsallowedurls",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge_webrtclocalipsallowedurls_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "111",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_relaunchnotification",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_relaunchnotification_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_relaunchnotification_relaunchnotification",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_relaunchnotification_relaunchnotification_2",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "112",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~passwordmanager_passwordmanagerenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~passwordmanager_passwordmanagerenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "113",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge~performance_startupboostenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge~performance_startupboostenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "114",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev92~policy~microsoft_edge~privatenetworkrequestsettings_insecureprivatenetworkrequestsallowed",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev92~policy~microsoft_edge~privatenetworkrequestsettings_insecureprivatenetworkrequestsallowed_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "115",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_webrtclocalhostiphandling",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_webrtclocalhostiphandling_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_webrtclocalhostiphandling_webrtclocalhostiphandling",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_webrtclocalhostiphandling_webrtclocalhostiphandling_default_public_interface_only",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "116",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_diskcachesize",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_diskcachesize_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_diskcachesize_diskcachesize",
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                  "settingValueTemplateReference": null,
+                  "value": 250609664
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "117",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_relaunchnotificationperiod",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_relaunchnotificationperiod_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_relaunchnotificationperiod_relaunchnotificationperiod",
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                  "settingValueTemplateReference": null,
+                  "value": 86400000
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "118",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev87~policy~microsoft_edge_edgeshoppingassistantenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev87~policy~microsoft_edge_edgeshoppingassistantenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "119",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev79diff~policy~microsoft_edge_externalprotocoldialogshowalwaysopencheckbox",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev79diff~policy~microsoft_edge_externalprotocoldialogshowalwaysopencheckbox_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "120",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge_showmicrosoftrewards",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge_showmicrosoftrewards_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "121",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev96~policy~microsoft_edge_internetexplorermodetoolbarbuttonenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev96~policy~microsoft_edge_internetexplorermodetoolbarbuttonenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "122",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~smartscreen_smartscreenenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~smartscreen_smartscreenenabled_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "123",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge~smartscreen_smartscreenpuaenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge~smartscreen_smartscreenpuaenabled_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "124",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev97~policy~microsoft_edge~smartscreen_smartscreendnsrequestsenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev97~policy~microsoft_edge~smartscreen_smartscreendnsrequestsenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "125",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge~smartscreen_smartscreenfortrusteddownloadsenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge~smartscreen_smartscreenfortrusteddownloadsenabled_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "126",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~smartscreen_preventsmartscreenpromptoverride",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~smartscreen_preventsmartscreenpromptoverride_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "127",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~smartscreen_preventsmartscreenpromptoverrideforfiles",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~smartscreen_preventsmartscreenpromptoverrideforfiles_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "128",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev111~policy~microsoft_edge_sharedarraybufferunrestrictedaccessallowed",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev111~policy~microsoft_edge_sharedarraybufferunrestrictedaccessallowed_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "129",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_requireonlinerevocationchecksforlocalanchors",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_requireonlinerevocationchecksforlocalanchors_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "130",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev105~policy~microsoft_edge_microsofteditorproofingenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev105~policy~microsoft_edge_microsofteditorproofingenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "131",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev114~policy~microsoft_edge_standalonehubssidebarenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev114~policy~microsoft_edge_standalonehubssidebarenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "132",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev118~policy~microsoft_edge~startup_newtabpagebingchatenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev118~policy~microsoft_edge~startup_newtabpagebingchatenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "133",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge_alternateerrorpagesenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge_alternateerrorpagesenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "134",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_suppressunsupportedoswarning",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_suppressunsupportedoswarning_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "135",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev104~policy~microsoft_edge_textpredictionenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev104~policy~microsoft_edge_textpredictionenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "136",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev96~policy~microsoft_edge~typosquattingchecker_typosquattingcheckerenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev96~policy~microsoft_edge~typosquattingchecker_typosquattingcheckerenabled_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "137",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev105~policy~microsoft_edge_internetexplorerintegrationalwayswaitforunload",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev105~policy~microsoft_edge_internetexplorerintegrationalwayswaitforunload_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "138",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev115~policy~microsoft_edge_walletdonationenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_microsoft_edgev115~policy~microsoft_edge_walletdonationenabled_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "139",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_update~policy~cat_google~cat_googleupdate~cat_applications_pol_defaultupdatepolicy",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_update~policy~cat_google~cat_googleupdate~cat_applications_pol_defaultupdatepolicy_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_update~policy~cat_google~cat_googleupdate~cat_applications_pol_defaultupdatepolicy_part_updatepolicy",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "device_vendor_msft_policy_config_update~policy~cat_google~cat_googleupdate~cat_applications_pol_defaultupdatepolicy_part_updatepolicy_1",
+                  "children": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "140",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_update~policy~cat_google~cat_googleupdate~cat_preferences_pol_autoupdatecheckperiod",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_update~policy~cat_google~cat_googleupdate~cat_preferences_pol_autoupdatecheckperiod_1",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_update~policy~cat_google~cat_googleupdate~cat_preferences_pol_autoupdatecheckperiod_part_autoupdatecheckperiod",
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                  "settingValueTemplateReference": null,
+                  "value": 1400
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
