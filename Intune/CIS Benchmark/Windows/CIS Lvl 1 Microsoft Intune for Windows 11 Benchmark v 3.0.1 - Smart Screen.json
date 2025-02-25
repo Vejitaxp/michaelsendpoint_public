@@ -1,0 +1,76 @@
+﻿{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
+    "createdDateTime": "2025-02-19T20:42:49.9371981Z",
+    "creationSource": null,
+    "description": "CIS Microsoft Intune for Windows 11 Benchmark v 3.0.1 policies for Intune\nCIS Level 1\nEnhanced Phishing Protection Policies",
+    "lastModifiedDateTime": "2025-02-19T20:42:49.9371981Z",
+    "name": "CIS Microsoft Intune for Windows 11 Benchmark v 3.0.1 - Smart Screen",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 4,
+    "technologies": "mdm",
+    "id": "4042e4ee-1334-4ea1-a961-86cb2dbe570f",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    },
+    "settings": [
+      {
+        "id": "0",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_webthreatdefense_notifymalicious",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_webthreatdefense_notifymalicious_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "1",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_webthreatdefense_notifypasswordreuse",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_webthreatdefense_notifypasswordreuse_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "2",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_webthreatdefense_notifyunsafeapp",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_webthreatdefense_notifyunsafeapp_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "3",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_webthreatdefense_serviceenabled",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_webthreatdefense_serviceenabled_1",
+            "children": []
+          }
+        }
+      }
+    ]
+  }

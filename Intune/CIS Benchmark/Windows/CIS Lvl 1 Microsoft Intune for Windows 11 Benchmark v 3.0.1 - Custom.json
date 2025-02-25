@@ -1,0 +1,39 @@
+{
+
+	"displayName" : "CIS Microsoft Intune for Windows 11 Benchmark v 3.0.1 - Custom",
+    "description" :  "CIS Microsoft Intune for Windows 11 Benchmark v 3.0.1 policies for Intune\nCIS Level 1\nCustom Policies",
+	"roleScopeTagIds" : [
+	"0"
+    ],
+    "@odata.type" : "#microsoft.graph.windows10CustomConfiguration",
+    "omaSettings" : [
+        {
+            "omaUri" : "./Device/Vendor/MSFT/Policy/Config/Wifi/AllowAutoConnectToWiFiSenseHotspots",
+            "description" : "Allow Windows to automatically connect to suggested open hotspots, to networks shared by contacts, and to hotspots offering paid services",
+            "displayName" : "auto_connect_hotspots",
+            "@odata.type" : "#microsoft.graph.omaSettingInteger",
+            "value" : "0"
+        },
+            {
+            "omaUri" : "./Device/Vendor/MSFT/Policy/Config/DmaGuard/DeviceEnumerationPolicy",
+            "description" : "Enumeration policy for external devices incompatible with Kernel DMA Protection",
+            "displayName" : "bitlocker_ext_devices",
+            "@odata.type" : "#microsoft.graph.omaSettingInteger",
+            "value" : "0"
+        },
+            {
+            "omaUri" : "./Device/Vendor/MSFT/Policy/Config/ApplicationManagement/BlockNonAdminUserInstall",
+            "description" : "Prevent non-admin users from installing packaged Windows apps",
+            "displayName" : "user_install_win_apps",
+            "@odata.type" : "#microsoft.graph.omaSettingInteger",
+            "value" : "1"
+        },
+            {
+            "omaUri" : "./Device/Vendor/MSFT/Policy/Config/Experience/AllowWindowsConsumerFeatures",
+            "description" : "Turn off Microsoft consumer experiences",
+            "displayName" : "off_ms_experience",
+            "@odata.type" : "#microsoft.graph.omaSettingInteger",
+            "value" : "0"
+        }
+    ]
+}
