@@ -1,0 +1,154 @@
+﻿{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
+    "createdDateTime": "2025-02-26T17:26:46.7143062Z",
+    "creationSource": null,
+    "description": "CIS Microsoft Intune for Windows 11 Benchmark v 3.0.1 policies for Intune\nCIS Level 2",
+    "lastModifiedDateTime": "2025-02-26T17:48:25.3630033Z",
+    "name": "CIS Lvl 2 Microsoft Intune for Windows 11 Benchmark v 3.0.1 - User Configuration",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 10,
+    "technologies": "mdm",
+    "id": "c14961b6-e450-45c3-8637-41dd913e14e8",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    },
+    "settings": [
+      {
+        "id": "0",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "user_vendor_msft_policy_config_admx_controlpaneldisplay_cpl_personalization_enablescreensaver",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "user_vendor_msft_policy_config_admx_controlpaneldisplay_cpl_personalization_enablescreensaver_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "1",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "user_vendor_msft_policy_config_admx_wpn_nolockscreentoastnotification",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "user_vendor_msft_policy_config_admx_wpn_nolockscreentoastnotification_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "2",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "user_vendor_msft_policy_config_admx_helpandsupport_hpimplicitfeedback",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "user_vendor_msft_policy_config_admx_helpandsupport_hpimplicitfeedback_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "3",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "user_vendor_msft_policy_config_attachmentmanager_donotpreservezoneinformation",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "user_vendor_msft_policy_config_attachmentmanager_donotpreservezoneinformation_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "4",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "user_vendor_msft_policy_config_attachmentmanager_notifyantivirusprograms",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "user_vendor_msft_policy_config_attachmentmanager_notifyantivirusprograms_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "5",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "user_vendor_msft_policy_config_admx_sharing_noinplacesharing",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "user_vendor_msft_policy_config_admx_sharing_noinplacesharing_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "6",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "user_vendor_msft_policy_config_admx_windowsmediaplayer_policycodecupdate",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "user_vendor_msft_policy_config_admx_windowsmediaplayer_policycodecupdate_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "7",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+          "settingDefinitionId": "user_vendor_msft_policy_config_experience_allowspotlightcollection",
+          "settingInstanceTemplateReference": null,
+          "simpleSettingValue": {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+            "settingValueTemplateReference": null,
+            "value": 0
+          }
+        }
+      },
+      {
+        "id": "8",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "user_vendor_msft_policy_config_experience_allowwindowsspotlight",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "user_vendor_msft_policy_config_experience_allowwindowsspotlight_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "9",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "user_vendor_msft_policy_config_applicationmanagement_msialwaysinstallwithelevatedprivileges",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "user_vendor_msft_policy_config_applicationmanagement_msialwaysinstallwithelevatedprivileges_0",
+            "children": []
+          }
+        }
+      }
+    ]
+  }
