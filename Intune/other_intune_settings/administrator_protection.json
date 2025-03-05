@@ -1,0 +1,76 @@
+﻿{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
+    "createdDateTime": "2025-03-05T18:15:46.019207Z",
+    "creationSource": null,
+    "description": "Device Setting\nOnly applicable for admin users",
+    "lastModifiedDateTime": "2025-03-05T18:16:40.8423827Z",
+    "name": "administrator_protection",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 4,
+    "technologies": "mdm",
+    "id": "747eefee-14ce-409c-95c9-48fd11f51049",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    },
+    "settings": [
+      {
+        "id": "0",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_behavioroftheelevationpromptforadministratorprotection",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_behavioroftheelevationpromptforadministratorprotection_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "1",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_runalladministratorsinadminapprovalmode",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_runalladministratorsinadminapprovalmode_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "2",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_typeofadminapprovalmode",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_typeofadminapprovalmode_2",
+            "children": []
+          }
+        }
+      },
+      {
+        "id": "3",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_useadminapprovalmode",
+          "settingInstanceTemplateReference": null,
+          "choiceSettingValue": {
+            "settingValueTemplateReference": null,
+            "value": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_useadminapprovalmode_1",
+            "children": []
+          }
+        }
+      }
+    ]
+  }
