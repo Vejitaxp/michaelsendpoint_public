@@ -1,6 +1,6 @@
 # Conditional Access best practices
 
-Parameter JSON Files for Conditional Access best practices based on the Microsoft recommendations.
+Parameter JSON Files for Conditional Access best practices based on the Microsoft and other recommendations.
 
 You can import all Policies with the Scripts in this [Repository](https://github.com/Vejitaxp/michaelsendpoint_public/tree/beb9620701e4dc83fe0520f06e2969d4598c751f/Entra/Scripts).
 
