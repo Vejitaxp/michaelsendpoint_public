@@ -12,7 +12,5 @@ You can import all Policies with the Scripts in this [Repository](https://github
     -  [Create_Service_Principal.ps1](https://github.com/Vejitaxp/michaelsendpoint_public/blob/20180b8da5455e50ba7dce5bac032712e876ee09/Entra/Scripts/Create_Service_Principal.ps1)
 4. Now run the [Import_Conditional_Access_Policies.ps1](https://github.com/Vejitaxp/michaelsendpoint_public/blob/20180b8da5455e50ba7dce5bac032712e876ee09/Entra/Scripts/Import_Conditional_Access_Policies.ps1) Script.
 
-
-
-> [!NOTE]
+> [!IMPORTANT]
 > Please be aware that without an Entra P2 License you will get an error creating the two policies with Sign-In Risk, because you don`t have the license for that.
