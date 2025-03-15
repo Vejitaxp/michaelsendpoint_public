@@ -16,7 +16,7 @@ Topics are:
 
 ## Getting Started
 
-To get started, visit our website [https://michaelsendpoint.com](https://michaelsendpoint.com) and explore my articles.
+To get started, visit my website [https://michaelsendpoint.com](https://michaelsendpoint.com) and explore my articles.
 
 
 ## Contact
