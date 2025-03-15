@@ -1,0 +1,63 @@
+{
+  "displayName": "Global-AppProtection-Intune-AnyPlatform-DeviceEnrollment-CA014",
+  "state": "disabled",
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "all"
+    ],
+    "platforms": null,
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "applications": {
+      "includeApplications": [
+        "d4ebce55-015a-49b5-a083-c84d1797ae8c"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    }
+  },
+  "grantControls": {
+    "operator": "AND",
+    "builtInControls": [
+      "mfa",
+      "compliantDevice"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength": null
+  },
+  "sessionControls": {
+    "disableResilienceDefaults": null,
+    "applicationEnforcedRestrictions": null,
+    "cloudAppSecurity": null,
+    "persistentBrowser": null,
+    "continuousAccessEvaluation": null,
+    "secureSignInSession": null,
+    "signInFrequency": {
+      "value": null,
+      "type": null,
+      "authenticationType": "primaryAndSecondaryAuthentication",
+      "frequencyInterval": "everyTime",
+      "isEnabled": true
+    }
+  }
+}

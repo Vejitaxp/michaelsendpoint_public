@@ -1,0 +1,48 @@
+{
+  "displayName": "Global-IdentityProtection-AllApps-AnyPlatform-DeviceRegistration-CA010",
+  "state": "disabled",
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "all"
+    ],
+    "platforms": null,
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "applications": {
+      "includeApplications": [],
+      "excludeApplications": [],
+      "includeUserActions": [
+        "urn:user:registerdevice"
+      ],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength": {
+      "id": "00000000-0000-0000-0000-000000000002"
+    }
+  }
+}

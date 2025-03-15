@@ -1,0 +1,68 @@
+{
+  "displayName": "Global-IdentityProtection-AllApps-AnyPlatform-BlockLegacyAuth-CA002",
+  "state": "disabled",
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "exchangeActiveSync",
+      "other"
+    ],
+    "platforms": null,
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "applications": {
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "block"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength": null
+  },
+  "sessionControls": { 
+    "ApplicationEnforcedRestrictions": {
+        "IsEnabled": null
+    },
+    "CloudAppSecurity": { 
+        "CloudAppSecurityType": null,
+        "IsEnabled": null 
+    },
+    "PersistentBrowser": { 
+        "IsEnabled": null,
+        "Mode": null 
+    },
+    "SignInFrequency": { 
+        "AuthenticationType": null,
+        "FrequencyInterval": null,
+        "IsEnabled": null,
+        "Type": null,
+        "Value": null
+    }
+  }  
+}
