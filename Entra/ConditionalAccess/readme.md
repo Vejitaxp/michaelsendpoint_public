@@ -14,3 +14,13 @@ You can import all Policies with the Scripts in this [Repository](https://github
 
 > [!IMPORTANT]
 > Please be aware that without an Entra P2 License you will get an error creating the two policies with Sign-In Risk, because you don`t have the license for that.
+
+> [!CAUTION]
+> When you intend to add the policy [Global-BaseProtection-AllApps-AnyPlatform-BlockNonPersonas-CA016.json](https://github.com/Vejitaxp/michaelsendpoint_public/blob/15ff1a0744be29b38de9f355ee3d8d270e738151/Entra/ConditionalAccess/Global-BaseProtection-AllApps-AnyPlatform-BlockNonPersonas-CA016.json),
+> please be aware that you should create two groups first.
+> - The first group should include all of your hybrid users. This group could be a dynamic group.
+> - The second group should include all cloud only accounts. This group should not be dynamic.
+> If you create the two groups before you import the policies, with the names "all_cloud_users" and "all_hybrid_users", the groups will be added to the exclutions automatically. 
+> <br>
+> The intend of this Policy is to block all newly created cloud users without an administrator activly adding him to a group manually or with user lifecycle management.
+> Like this an attacker has no possibility to gain access without an administrator nowing about it. You just need to audit additions to the cloud only user group.
