@@ -23,5 +23,5 @@ You can import all Policies with the Scripts in this [Repository](https://github
 > 
 > If you create the two groups before you import the policies, with the names "all_cloud_users" and "all_hybrid_users", the groups will be added to the exclutions automatically. 
 > <br>
-> The intend of this Policy is to block all newly created cloud users without an administrator activly adding him to a group manually or with user lifecycle management.
-> Like this an attacker has no possibility to gain access without an administrator nowing about it. You just need to audit additions to the cloud only user group.
+> The purpose of this policy is to block all newly created cloud users unless an administrator actively adds them to a group, either manually or through User Lifecycle Management.
+> This way an attacker has no way of gaining access without an administrator knowing. All you need to do is audit additions to the cloud-only user group.
