@@ -20,6 +20,7 @@ You can import all Policies with the Scripts in this [Repository](https://github
 > please be aware that you should create two groups first.
 > - The first group should include all of your hybrid users. This group could be a dynamic group.
 > - The second group should include all cloud only accounts. This group should not be dynamic.
+> 
 > If you create the two groups before you import the policies, with the names "all_cloud_users" and "all_hybrid_users", the groups will be added to the exclutions automatically. 
 > <br>
 > The intend of this Policy is to block all newly created cloud users without an administrator activly adding him to a group manually or with user lifecycle management.
