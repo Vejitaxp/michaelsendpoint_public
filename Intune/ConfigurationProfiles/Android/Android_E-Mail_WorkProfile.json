@@ -1,0 +1,66 @@
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations(assignments())/$entity",
+  "@odata.type": "#microsoft.graph.androidWorkProfileGmailEasConfiguration",
+  "@odata.id": "deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')",
+  "@odata.editLink": "deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')/microsoft.graph.androidWorkProfileGmailEasConfiguration",
+  "id": "3b32d01b-84da-492d-9ce9-5676b06364a6",
+  "lastModifiedDateTime@odata.type": "#DateTimeOffset",
+  "lastModifiedDateTime": "2025-03-18T13:27:16.0543872Z",
+  "roleScopeTagIds@odata.type": "#Collection(String)",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime@odata.type": "#DateTimeOffset",
+  "createdDateTime": "2025-03-18T13:25:31.441742Z",
+  "description": "This Policy sets Android E-Mail settings.",
+  "displayName": "Android_E-Mail_WorkProfile",
+  "version": 2,
+  "authenticationMethod@odata.type": "#microsoft.graph.easAuthenticationMethod",
+  "authenticationMethod": "usernameAndPassword",
+  "durationOfEmailToSync@odata.type": "#microsoft.graph.emailSyncDuration",
+  "durationOfEmailToSync": "oneMonth",
+  "emailAddressSource@odata.type": "#microsoft.graph.userEmailSource",
+  "emailAddressSource": "userPrincipalName",
+  "hostName": "outlook.office365.com",
+  "requireSsl": true,
+  "usernameSource@odata.type": "#microsoft.graph.androidUsernameSource",
+  "usernameSource": "userPrincipalName",
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')/microsoft.graph.androidWorkProfileGmailEasConfiguration/assignments",
+  "assignments@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')/microsoft.graph.androidWorkProfileGmailEasConfiguration/assignments/$ref",
+  "assignments@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')/microsoft.graph.androidWorkProfileGmailEasConfiguration/assignments",
+  "assignments": [],
+  "deviceSettingStateSummaries@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')/microsoft.graph.androidWorkProfileGmailEasConfiguration/deviceSettingStateSummaries/$ref",
+  "deviceSettingStateSummaries@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')/microsoft.graph.androidWorkProfileGmailEasConfiguration/deviceSettingStateSummaries",
+  "deviceStatuses@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')/microsoft.graph.androidWorkProfileGmailEasConfiguration/deviceStatuses/$ref",
+  "deviceStatuses@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')/microsoft.graph.androidWorkProfileGmailEasConfiguration/deviceStatuses",
+  "deviceStatusOverview@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')/microsoft.graph.androidWorkProfileGmailEasConfiguration/deviceStatusOverview/$ref",
+  "deviceStatusOverview@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')/microsoft.graph.androidWorkProfileGmailEasConfiguration/deviceStatusOverview",
+  "groupAssignments@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')/microsoft.graph.androidWorkProfileGmailEasConfiguration/groupAssignments/$ref",
+  "groupAssignments@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')/microsoft.graph.androidWorkProfileGmailEasConfiguration/groupAssignments",
+  "userStatuses@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')/microsoft.graph.androidWorkProfileGmailEasConfiguration/userStatuses/$ref",
+  "userStatuses@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')/microsoft.graph.androidWorkProfileGmailEasConfiguration/userStatuses",
+  "userStatusOverview@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')/microsoft.graph.androidWorkProfileGmailEasConfiguration/userStatusOverview/$ref",
+  "userStatusOverview@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')/microsoft.graph.androidWorkProfileGmailEasConfiguration/userStatusOverview",
+  "identityCertificate@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')/microsoft.graph.androidWorkProfileGmailEasConfiguration/identityCertificate/$ref",
+  "identityCertificate@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')/microsoft.graph.androidWorkProfileGmailEasConfiguration/identityCertificate",
+  "#microsoft.graph.assign": {
+    "title": "microsoft.graph.assign",
+    "target": "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')/microsoft.graph.deviceConfiguration/microsoft.graph.assign"
+  },
+  "#microsoft.graph.assignedAccessMultiModeProfiles": {
+    "title": "microsoft.graph.assignedAccessMultiModeProfiles",
+    "target": "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')/microsoft.graph.deviceConfiguration/microsoft.graph.assignedAccessMultiModeProfiles"
+  },
+  "#microsoft.graph.windowsPrivacyAccessControls": {
+    "title": "microsoft.graph.windowsPrivacyAccessControls",
+    "target": "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')/microsoft.graph.deviceConfiguration/microsoft.graph.windowsPrivacyAccessControls"
+  },
+  "#microsoft.graph.getOmaSettingPlainTextValue": {
+    "title": "microsoft.graph.getOmaSettingPlainTextValue",
+    "target": "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations('3b32d01b-84da-492d-9ce9-5676b06364a6')/microsoft.graph.deviceConfiguration/microsoft.graph.getOmaSettingPlainTextValue"
+  }
+}
