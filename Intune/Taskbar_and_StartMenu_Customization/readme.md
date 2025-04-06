@@ -2,7 +2,7 @@
 
 ## Creating the Taskbar settings XML
 
-1. To configure the Taskbar with Microsoft Intune or GPO you can now automatically create the XML file you can use the Script I created from the [![PSGallery](https://powershellgallery.com/Content/Images/Branding/packageDefaultIcon.png)](https://www.powershellgallery.com/packages/New-TaskbarCustomizationXML).
+1. To configure the Taskbar with Microsoft Intune or GPO you can now automatically create the XML file you can use the Script I created from the [PSGallery](https://www.powershellgallery.com/packages/New-TaskbarCustomizationXML).
 
 ```powershell
 Install-Script -Name New-TaskbarCustomizationXML
