@@ -1,4 +1,4 @@
-# :monitor: Monitoring App Control for Business Audit Logs
+# :computer: Monitoring App Control for Business Audit Logs
 
 This script retrieves events from the Windows Event Logs for a predefined list of Event IDs. 
 It supports two providers: Microsoft-Windows-CodeIntegrity and Microsoft-Windows-AppLocker. 
