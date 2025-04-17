@@ -5,4 +5,4 @@ It supports two providers: Microsoft-Windows-CodeIntegrity and Microsoft-Windows
 The script filters the events for uniqueness and exports them to both CSV and XML formats. 
 The exported files are saved in the Intune Management Extension logs folder.
 
-It belongs to this (Article)[https://michaelsendpoint.com/intune/monitor_appcontrol.html].
+Learn more about this script and how to use it in my Article: [Monitor App Control for Business Audit Logs | Intune](https://michaelsendpoint.com/intune/monitor_appcontrol.html).
