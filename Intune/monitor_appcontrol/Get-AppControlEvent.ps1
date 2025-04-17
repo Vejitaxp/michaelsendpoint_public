@@ -9,14 +9,12 @@
         Get-AppControlEvent
     .TAGS
         Event Logs, AppLocker, CodeIntegrity, PowerShell, Windows, CSV Export
-    .GUID
-        5f2c9b8e-4d3a-4e8f-9c2b-7a1d2f3e6a4b
     .SYNOPSIS
         Retrieves and exports unique events from Windows Event Logs for specified Event IDs.
     .creationdate
-        15.04.2025
+        17.04.2025
     .lasteditdate
-        15.04.2025
+        17.04.2025
     .DESCRIPTION
         This script retrieves events from the Windows Event Logs for a predefined list of Event IDs. 
         It supports two providers: Microsoft-Windows-CodeIntegrity and Microsoft-Windows-AppLocker. 
