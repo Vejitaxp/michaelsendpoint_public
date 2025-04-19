@@ -18,7 +18,7 @@
     .DESCRIPTION
         This script retrieves events from the Windows Event Logs for a predefined list of Event IDs. 
         It supports two providers: Microsoft-Windows-CodeIntegrity and Microsoft-Windows-AppLocker. 
-        The script filters the events for uniqueness and exports them to both CSV and XML formats. 
+        The script filters the events for uniqueness and exports them to XML format. 
         The exported files are saved in the Intune Management Extension logs folder.
 #>
 
@@ -63,7 +63,7 @@ $ErrorActionPreference = 'SilentlyContinue'
 foreach($event in $ids) {
     $Codeintegrity = Get-WinEvent -FilterHashtable @{ LogName='*'; Id=$event; ProviderName='Microsoft-Windows-CodeIntegrity'; StartTime=$startdate; EndTime=Get-Date } | Select-Object -Unique
     if($Codeintegrity){
-        log "Exportet csv and xml file for unique $($event) events."
+        log "Exportet xml file for unique $($event) events."
         $Codeintegrity | Export-Clixml -Path "$($env:programdata)\Microsoft\IntuneManagementExtension\Logs\$($event).xml"
     }
 }
@@ -71,7 +71,7 @@ foreach($event in $ids) {
 foreach($event in $ids) {
     $applocker = Get-WinEvent -FilterHashtable @{ LogName='*'; Id=$event; ProviderName='Microsoft-Windows-AppLocker'; StartTime=$startdate; EndTime=(Get-Date) } | Select-Object -unique
     if($applocker){
-        log "Exportet csv and xml file for unique $($event) events."
+        log "Exportet xml file for unique $($event) events."
         $applocker | Export-Clixml -Path "$($env:programdata)\Microsoft\IntuneManagementExtension\Logs\$($event).xml"
     }
 }
