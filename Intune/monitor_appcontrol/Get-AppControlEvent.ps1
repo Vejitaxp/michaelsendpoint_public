@@ -14,7 +14,7 @@
     .creationdate
         15.04.2025
     .lasteditdate
-        1.04.2025
+        20.04.2025
     .DESCRIPTION
         This script retrieves events from the Windows Event Logs for a predefined list of Event IDs. 
         It supports two providers: Microsoft-Windows-CodeIntegrity and Microsoft-Windows-AppLocker. 
