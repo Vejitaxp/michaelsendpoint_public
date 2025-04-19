@@ -64,7 +64,6 @@ foreach($event in $ids) {
     $Codeintegrity = Get-WinEvent -FilterHashtable @{ LogName='*'; Id=$event; ProviderName='Microsoft-Windows-CodeIntegrity'; StartTime=$startdate; EndTime=Get-Date } | Select-Object -Unique
     if($Codeintegrity){
         log "Exportet csv and xml file for unique $($event) events."
-        $Codeintegrity | Export-Csv -path "$($env:programdata)\Microsoft\IntuneManagementExtension\Logs\$($event).csv" -NoTypeInformation -Delimiter ";"
         $Codeintegrity | Export-Clixml -Path "$($env:programdata)\Microsoft\IntuneManagementExtension\Logs\$($event).xml"
     }
 }
@@ -73,7 +72,6 @@ foreach($event in $ids) {
     $applocker = Get-WinEvent -FilterHashtable @{ LogName='*'; Id=$event; ProviderName='Microsoft-Windows-AppLocker'; StartTime=$startdate; EndTime=(Get-Date) } | Select-Object -unique
     if($applocker){
         log "Exportet csv and xml file for unique $($event) events."
-        $applocker | Export-Csv -path "$($env:programdata)\Microsoft\IntuneManagementExtension\Logs\$($event).csv" -NoTypeInformation -Delimiter ";"
         $applocker | Export-Clixml -Path "$($env:programdata)\Microsoft\IntuneManagementExtension\Logs\$($event).xml"
     }
 }
