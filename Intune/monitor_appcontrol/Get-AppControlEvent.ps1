@@ -42,7 +42,7 @@ $logname = (Get-Date -Format "dd-MM-yyyy") + "_script.log"
 $ids = @()
 
 # Event Log Provider: CodeIntegrity - Operational
-$ids += 3004, 3033, 3034, 3076, 3077, 3089, 3095, 3096, 3097, 3099, 3100, 3101, 3102, 3103, 3105, 3090, 3091, 3092, 8002
+$ids += 3004, 3033, 3034, 3076, 3077, 3089, 3091
 
 # Event Log Provider: AppLocker - MSI and Script
 $ids += 8028, 8029, 8036, 8037, 8038, 8039, 8040
