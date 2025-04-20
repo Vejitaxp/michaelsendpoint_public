@@ -37,7 +37,7 @@ function log
 $logpath = "$($env:ProgramData)\Microsoft\IntuneManagementExtension\Logs"
 $logname = (Get-Date -Format "dd-MM-yyyy") + "_script.log"
 
-# ------------------------------------------------- Read EventIDs from CSV -------------------------------------------------
+# ------------------------------------------------- Read EventIDs ---------------------------------------------------------
 
 $ids = @()
 
