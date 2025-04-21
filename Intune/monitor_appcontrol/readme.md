@@ -12,4 +12,4 @@ This script generates a Code Integrity (AppControl) audit policy.
 It creates the policy in the Intune Management Extension log folder, converts it into a supplemental policy.
 
 
-#### Learn more about these scripts and how to use them in my Article: [Monitor App Control for Business Audit Logs | Intune](https://michaelsendpoint.com/intune/monitor_appcontrol.html).
+### Learn more about these scripts and how to use them in my Article: [Monitor App Control for Business Audit Logs | Intune](https://michaelsendpoint.com/intune/monitor_appcontrol.html).
