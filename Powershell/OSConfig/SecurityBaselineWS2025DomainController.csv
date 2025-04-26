@@ -263,7 +263,7 @@
 "SwitchToTheSecureDesktopWhenPromptingForElevation","User Account Control: Switch to the secure desktop when prompting for elevation","Integer","1","1","@{Status=Compliant; Reason=1 is equal to 1; Severity=Critical}"
 "SystemAllowTelemetry","Allow Diagnostic Data","Integer","1",,"@{Status=NotCompliant; Reason=(null) is not a number; Severity=Warning}"
 "SystemBootStartDriverInitialization","Boot-Start Driver Initialization Policy","Integer","3",,"@{Status=Compliant; Reason=(null) is equal to (null); Severity=Warning}"
-"SystemEnableSoftwareRestrictionPolicies","System settings: Use Certificate Rules on Windows Executables for Software Restriction Policies","Integer",,"0";
+"SystemEnableSoftwareRestrictionPolicies","System settings: Use Certificate Rules on Windows Executables for Software Restriction Policies","Integer",,"0",
 "SystemMinimizeInternetConnections","Minimize the number of simultaneous connections to the Internet or a Windows Domain","Integer","1",,"@{Status=NotCompliant; Reason=(null) is not equal to 1; Severity=Warning}"
 "SystemWindowsSearchService","Disable Windows Search Service","Integer","4","4","@{Status=Compliant; Reason=4 is equal to 4; Severity=Critical}"
 "TerminalServerTS_TEMP_DELETE","Do not delete temp folders upon exit","Integer","1",,"@{Status=NotCompliant; Reason=(null) is not equal to 1; Severity=Warning}"
