@@ -1,4 +1,4 @@
-"Name,""Description"",""DataType"",""Default"",""Value"",""Compliance""";;
+"Name,""Description"",""DataType"",""Default"",""Value"",""Compliance"""
 "AccountLockoutPolicy,""Account lockout policy"",""String"",""ResetAccountLockoutCounterAfter:15, AccountLockoutDuration:15, AccountLockoutThreshold:3"",""AccountLockoutDuration:10, AccountLockoutThreshold:10, ResetAccountLockoutCounterAfter:10"",""@{Status=NotCompliant";" Reason=""""AccountLockoutDuration:10, AccountLockoutThreshold:10, ResetAccountLockoutCounterAfter:10"""" does not match the pattern: ResetAccountLockoutCounterAfter:[1][5-9]|[2-9]\d|[1-9]\d{2,}";" Severity=Important}"""
 "AllowAnonymousSIDOrNameTranslation,""Network access: Allow anonymous SID/Name translation"",""Integer"",""0"",""0"",""@{Status=Compliant"; Reason=0 is equal to 0;" Severity=Warning}"""
 "AllowedToFormatAndEjectRemovableMedia,""Devices: Allowed to format and eject removable media"",""String"",""0"",,""@{Status=Compliant"; Reason=(null) is equal to (null);" Severity=Warning}"""
