@@ -1,4 +1,3 @@
-#TYPE System.Management.Automation.PSCustomObject
 "Name";"Description";"DataType";"Default";"Value";"Compliance"
 "AllowDatagramProcessingOnWinServer";"This setting controls datagram processing for Network Protection is enabled on Server";"Integer";"0";;"@{Status=NotCompliant; Reason=(null) is not equal to 0; Severity=Important}"
 "AllowNetworkProtectionOnWinServer";"This setting controls whether Network Protection is allows to be configured into block or Audit mode on Windows Server";"Integer";"1";;"@{Status=NotCompliant; Reason=(null) is not equal to 1; Severity=Important}"
