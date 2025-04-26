@@ -53,7 +53,7 @@
 "ConnectivityDisableDownloadingOfPrintDriversOverHTTP","Turn off downloading of print drivers over HTTP","Integer","1",,"@{Status=NotCompliant; Reason=(null) is not equal to 1; Severity=Warning}"
 "ConnectivityProhibitInstallationAndConfigurationOfNetworkBridge","Prohibit installation and configuration of Network Bridge on your DNS domain network","Integer","0",,"@{Status=NotCompliant; Reason=(null) is not equal to 0; Severity=Warning}"
 "CredentialProvidersAllowPINLogon","Turn on convenience PIN sign-in","Integer","0",,"@{Status=Compliant; Reason=(null) is equal to (null); Severity=Warning}"
-"CredentialsUIDisablePasswordReveal,"Do not display the password reveal button","Integer","1",,"@{Status=NotCompliant; Reason=(null) is not equal to 1; Severity=Warning}"
+"CredentialsUIDisablePasswordReveal","Do not display the password reveal button","Integer","1",,"@{Status=NotCompliant; Reason=(null) is not equal to 1; Severity=Warning}"
 "CredentialsUIEnumerateAdministrators","Enumerate administrator accounts on elevation","Integer","0",,"@{Status=Compliant; Reason=(null) is equal to (null); Severity=Warning}"
 "CryptographyAllowedKerberosEncryptionTypes","Network Security: Configure encryption types allowed for Kerberos","Integer","2147483640",,"@{Status=Compliant; Reason=(null) is equal to (null); Severity=Critical}"
 "CryptographyForceStrongKeyProtection","Users must be required to enter a password to access private keys stored on the computer.","Integer","2",,"@{Status=NotCompliant; Reason=(null) is not equal to 2; Severity=Important}"
