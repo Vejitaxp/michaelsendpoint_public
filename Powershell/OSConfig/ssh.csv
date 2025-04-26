@@ -1,0 +1,26 @@
+"Name,""Description"",""DataType"",""Default"",""Value"",""Compliance""";;
+"AllowGroups,""Allowed groups for SSH"",""Array"",""administrators openssh users"",""System.Object[]"",""@{Status=Compliant";" Reason=[""""administrators"""",""""openssh users""""] contains the expected values: [""""administrators"""",""""openssh users""""]";" Severity=Important}"""
+"AllowUsers,""Allowed users for SSH"",""Array"",""System.Object[]"",,""@{Status=Compliant"; Reason=[] contains the expected values: [];" Severity=Critical}"""
+"AuthenticationMethods,""Authentication Method that can be used."",""String"",""any"",""any"",""@{Status=Compliant";" Reason=""""any"""" contains the expected values: [""""password"""",""""publickey"""",""""any""""]";" Severity=Important}"""
+"AuthorizedKeysFile,""Specifies the file that contains the public keys used for user authentication."",""String"",""%programdata%/ssh/administrators_authorized_keys"","".ssh/authorized_keys"",""@{Status=NotCompliant";" Reason="""".ssh/authorized_keys"""" is not equal to """"%programdata%/ssh/administrators_authorized_keys""""";" Severity=Important}"""
+"Banner,""The contents of the banner file that is sent to the remote user before authentication is allowed."",""String"",""#######################################################################";;
+;;
+Authorized access only!;;
+;;
+If you are not authorized to access or use this system, disconnect now!;;
+;;
+#######################################################################;;
+,,@{Status=NotCompliant;" Reason=(null) is not equal to """"#######################################################################\r\n\r\nAuthorized access only!\r\n\r\nIf you are not authorized to access or use this system, disconnect now!\r\n\r\n#######################################################################\r\n""""";" Severity=Informational}"""
+"Ciphers,""The list of allowed ciphers"",""Array"",""aes128-ctr aes192-ctr aes256-ctr"",""System.Object[]"",""@{Status=NotCompliant";" Reason=""""chacha20-poly1305@openssh.com"""" is not one of the expected values: [""""aes128-ctr"""",""""aes192-ctr"""",""""aes256-ctr""""]";" Severity=Critical}"""
+"ClientAliveCountMax,""The number of client alive messages which may be sent without sshd receiving any messages back from the client"",""Integer"",""0"",""3"",""@{Status=NotCompliant"; Reason=3 is not equal to 0;" Severity=Important}"""
+"ClientAliveInterval,""Timeout interval in seconds after which if no data has been received from the client, sshd will send a message to request a response"",""Integer"",""3600"",""0"",""@{Status=NotCompliant"; Reason=0 is not equal to 3600;" Severity=Important}"""
+"DenyGroups,""Denied groups for SSH"",""Array"",""System.Object[]"",,""@{Status=Compliant"; Reason=[] contains the expected values: [];" Severity=Important}"""
+"DenyUsers,""Denied users for SSH"",""Array"",""System.Object[]"",,""@{Status=Compliant"; Reason=[] contains the expected values: [];" Severity=Important}"""
+"GSSAPIAuthentication,""Specifies whether user authentication based on GSSAPI is allowed."",""Boolean"",""False"",""False"",""@{Status=Compliant"; Reason=false is equal to false;" Severity=Important}"""
+"HostKey,""Specifies a file containing the private host key used by ssh"",""String"",""__PROGRAMDATA__/ssh/ssh_host_ecdsa_key"",""System.Object[]"",""@{Status=NotCompliant";" Reason=[""""__PROGRAMDATA__\\ssh/ssh_host_rsa_key"""",""""__PROGRAMDATA__\\ssh/ssh_host_ecdsa_key"""",""""__PROGRAMDATA__\\ssh/ssh_host_ed25519_key""""] is not equal to """"__PROGRAMDATA__/ssh/ssh_host_ecdsa_key""""";" Severity=Important}"""
+"LoginGraceTime,""The time in seconds after which the server disconnects if the user has not successfully logged in"",""Integer"",""60"",""120"",""@{Status=NotCompliant"; Reason=120 is not equal to 60;" Severity=Important}"""
+"MACs,""The list of available MAC algorithms, known as MACs"",""Array"",""hmac-sha2-256"",""System.Object[]"",""@{Status=NotCompliant";" Reason=""""umac-64-etm@openssh.com"""" is not one of the expected values: [""""hmac-sha2-256""""]";" Severity=Important}"""
+"MaxAuthTries,""Maximum number of authentication attempts"",""Integer"",""6"",""6"",""@{Status=Compliant"; Reason=6 is equal to 6;" Severity=Critical}"""
+"PermitEmptyPasswords,""Whether the server allows login to account with empty password strings"",""Boolean"",""False"",""False"",""@{Status=Compliant"; Reason=false is equal to false;" Severity=Critical}"""
+"Port,""The SSH port"",""Integer"",""22"",""22"",""@{Status=Compliant"; Reason=22 is equal to 22;" Severity=Important}"""
+"SyslogFacility,""Gives the facility code that is used when logging messages."",""String"",""LOCAL0"",""AUTH"",""@{Status=NotCompliant";" Reason=""""AUTH"""" is not equal to """"LOCAL0""""";" Severity=Important}"""
