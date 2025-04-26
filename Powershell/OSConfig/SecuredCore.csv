@@ -1,4 +1,3 @@
-#TYPE System.Management.Automation.PSCustomObject
 "Name";"Description";"DataType";"Default";"Value";"Compliance";"IsCapable"
 "ConfigureSystemGuardLaunch";"Secured-Core SystemGuard (DRTM)";"Integer";"1";;"@{Status=NotCompliant; Reason=(null) is not equal to 1; Severity=Critical}";"False"
 "EnableVirtualizationBasedSecurity";"Secured-Core Virtualization Based Security (VBS)";"Integer";"1";;"@{Status=NotCompliant; Reason=(null) is not equal to 1; Severity=Critical}";"True"
