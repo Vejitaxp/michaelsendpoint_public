@@ -34,7 +34,7 @@
 "AuditOtherSystemEvents","Audit Other System Events","Integer","3","3","@{Status=Compliant; Reason=3 is equal to 3; Severity=Critical}"
 "AuditPnPExternalDevice","Audit PNP Activity","Integer","1","0","@{Status=NotCompliant; Reason=0 is less than the minimum value 1; Severity=Critical}"
 "AuditPolicyChange","Audit Policy Change","Integer","1","1","@{Status=Compliant; Reason=1 is greater than or equal to the minimum allowed value 1; Severity=Critical}"
-"AuditProcessCreatedOrStarted,"Audit Process Creation","Integer","1","0","@{Status=NotCompliant; Reason=0 is less than the minimum value 1; Severity=Critical}"
+"AuditProcessCreatedOrStarted","Audit Process Creation","Integer","1","0","@{Status=NotCompliant; Reason=0 is less than the minimum value 1; Severity=Critical}"
 "AuditRemovableStorage","Audit Removable Storage","Integer","3","0","@{Status=NotCompliant; Reason=0 is not equal to 3; Severity=Critical}"
 "AuditSecurityGroupManagement","Audit Security Group Management","Integer","1","1","@{Status=Compliant; Reason=1 is greater than or equal to the minimum allowed value 1; Severity=Critical}"
 "AuditSecurityStateChange","Audit Security State Change","Integer","1","1","@{Status=Compliant; Reason=1 is greater than or equal to the minimum allowed value 1; Severity=Critical}"
