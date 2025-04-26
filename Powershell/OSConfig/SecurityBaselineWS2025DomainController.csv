@@ -1,4 +1,3 @@
-#TYPE System.Management.Automation.PSCustomObject
 "Name";"Description";"DataType";"Default";"Value";"Compliance"
 "AfdDisableAddressSharing";"System Services Afd DisableAddressSharing";"Integer";"1";;"@{Status=NotCompliant; Reason=(null) is not equal to 1; Severity=Critical}"
 "AllowAnonymousSIDOrNameTranslation";"Network access: Allow anonymous SID/Name translation";"Integer";"0";"0";"@{Status=Compliant; Reason=0 is equal to 0; Severity=Warning}"
