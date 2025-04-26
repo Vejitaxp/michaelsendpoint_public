@@ -1,4 +1,3 @@
-#TYPE System.Management.Automation.PSCustomObject
 "Name";"Description";"DataType";"Value";"Compliance"
 "BootDMAProtection";"Kernel Direct Memory Access (DMA) Protection is a Windows security feature that protects against external peripherals from gaining unauthorized access to memory.";"Integer";"2";"@{Status=NotCompliant; Reason=2 is not equal to 1; Severity=Critical}"
 "HypervisorEnforcedCodeIntegrityStatus";"Memory integrity, also known as Hypervisor-protected Code Integrity (HVCI), uses an isolated virtual environment to run integrity checks of kernel mode software, enhancing protection against malware trying to exploit the OS kernel.";"Integer";"3";"@{Status=NotCompliant; Reason=3 is not equal to 0; Severity=Critical}"
