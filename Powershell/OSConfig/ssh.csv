@@ -1,4 +1,3 @@
-#TYPE System.Management.Automation.PSCustomObject
 "Name","Description","DataType","Default","Value","Compliance"
 "AllowGroups","Allowed groups for SSH","Array","administrators openssh users","System.Object[]","@{Status=Compliant; Reason=[""administrators"",""openssh users""] contains the expected values: [""administrators"",""openssh users""]; Severity=Important}"
 "AllowUsers","Allowed users for SSH","Array","System.Object[]",,"@{Status=Compliant; Reason=[] contains the expected values: []; Severity=Critical}"
