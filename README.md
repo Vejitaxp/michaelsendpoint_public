@@ -1,3 +1,5 @@
+<img src="https://michaelsendpoint.com/Logo.png" width="100"/>
+
 # Michael's Endpoint
 
 Welcome to the public repository for [Michael's Endpoint](https://michaelsendpoint.com).
