@@ -1,4 +1,5 @@
-<img src="https://michaelsendpoint.com/Logo.png" width="600"/>
+[<img src="https://michaelsendpoint.com/Logo.png" width="600">](https://michaelsendpoint.com/)
+<img src="" width="600"/>
 
 # Michael's Endpoint
 
