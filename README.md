@@ -1,4 +1,4 @@
-<img src="https://michaelsendpoint.com/Logo.png" width="700"/>
+<img src="https://michaelsendpoint.com/Logo.png" width="600"/>
 
 # Michael's Endpoint
 
