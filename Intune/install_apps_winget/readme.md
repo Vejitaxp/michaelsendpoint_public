@@ -1,5 +1,5 @@
 <img src="https://learn.microsoft.com/de-de/windows/package-manager/winget/images/install.png" width="600"/>
-<img src="https://icons8.com/icon/D5nuxA0qwo6w/microsoft-intune" width="400"/>
+<img src="https://img.icons8.com/?size=100&id=D5nuxA0qwo6w&format=png&color=000000" width="400"/>
 
 # Install Apps with Winget using Intune
 
