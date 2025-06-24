@@ -1,0 +1,39 @@
+[General]
+Version = 1.0
+RegKey = Software\Hewlett-Packard\PNP\CLJCM1312
+Execute = ExeSec
+APP =AppSection
+UpdateFiles = UpdateFilesSection
+CDGuid={8EEDB90E-6ABC-42bb-AD4C-39DEE05E3EEA}
+Division=hpp
+LAST_IO_REVISION=12
+
+;[UpdateFilesSection]
+;1=hpptpml2.dll
+;2=hpgwiamd.dll
+;3=hpgtpusd.dll
+
+[AppSection]
+FileName = setup\pnplaunch.exe
+TagFile = hppapr11.dat
+Params = pnplaunch.ini
+
+[ExeSec]
+FileName = hpzstub.exe
+TagFile = hppapr11.dat
+RunLineKey = HP CLJCM Install
+2KPassThroughName = hpbvspst.exe
+
+[INFList.2]
+hppcp611=
+hppaew11=
+hppcps11=
+hppasc11=
+hppafx11=
+
+[INFList.x64]
+hppdp611=
+hppaew11=
+hppdps11=
+hppasc11=
+hppafx11=

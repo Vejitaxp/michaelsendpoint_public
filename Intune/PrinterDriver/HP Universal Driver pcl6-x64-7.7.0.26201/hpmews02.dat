@@ -1,0 +1,38 @@
+[General]
+Version = 1.0
+RegKey = Software\Hewlett-Packard\PNP\LJP2015
+Execute = ExeSec
+APP =AppSection
+UpdateFiles = UpdateFilesSection
+CDGUID = {BE4CEA63-8351-4A12-9E3A-556F8B76683A}
+DIVISION=hpp
+LAST_IO_REVISION=12
+
+;[UpdateFilesSection]
+;1=hpptpml2.dll
+;2=hpgwiamd.dll
+;3=hpgtpusd.dll
+
+[AppSection]
+FileName = setup\pnplaunch.exe
+TagFile = hppapr04.dat
+Params = pnplaunch.ini
+
+[ExeSec]
+FileName = hpzsetup.exe
+TagFile = hppapr04.dat
+RunLineKey = HP LJP2015 Install
+2KPassThroughName = hpbvspst.exe
+
+[INFList.2]
+hppcp604=
+hppaew04=
+hppcp504=
+hppcps04=
+
+[INFList.x64]
+hppdp604=
+hppaew04=
+hppdp504=
+hppdps04=
+
