@@ -1,6 +1,6 @@
 <#PSScriptInfo
     .VERSION
-        1.1.0
+        1.2.0
     .AUTHOR
         Michael Frank
     .COMPANYNAME
@@ -16,16 +16,13 @@
     .creationdate
         30.03.2025
     .lasteditdate
-        30.03.2025
-    .DESCRIPTION
-        This script automates the creation of a custom Taskbar layout XML file for Windows systems.
-        It allows users to select shortcuts and applications to be pinned to the Taskbar.
-        The script retrieves existing Taskbar shortcuts and installed applications, presenting them in graphical selection forms.
-        Selected items are then used to generate an XML file that defines the Taskbar layout.
-        It includes functionality to convert file paths to environment variable-based paths for portability.
-        The XML file is structured according to Microsoft's Taskbar layout schema.
-        The script ensures user-friendly interaction through Windows Forms and handles file creation and formatting programmatically.
-        It is designed for IT administrators or advanced users customizing Windows environments.
+        08.01.2026
+    .DESCRIPTION 
+        This script automates the creation of a custom Taskbar layout XML file for Windows systems. It allows users to select shortcuts and applications to be pinned to the Taskbar. The script retrieves existing Taskbar shortcuts and installed applications, presenting them in graphical selection forms. Selected items are then used to generate an XML file that defines the Taskbar layout. It includes functionality to convert file paths to environment variable-based paths for portability. The XML file is structured according to Microsoft's Taskbar layout schema. The script ensures user-friendly interaction through Windows Forms and handles file creation and formatting programmatically. It is designed for IT administrators or advanced users customizing Windows environments. 
+    .Update
+        1.0.0 - Initial release
+        1.1.0 - Added path conversion to environment variables
+        1.2.0 - Added support deletable taskbar shortcuts
 #>
 
 # ------------------------------------------------- Windows Folder Selection Form
@@ -194,6 +191,55 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK)
     #$apps # Shows the selected items in the console
 }
 
+# ------------------------------------------------- Select deletable taskbar shortcuts
+
+Add-Type -AssemblyName System.Windows.Forms
+Add-Type -AssemblyName System.Drawing
+
+$form = New-Object System.Windows.Forms.Form
+$form.Text = 'Deletable Shortcuts Selector'
+$form.Size = New-Object System.Drawing.Size(400,600)
+$form.StartPosition = 'CenterScreen'
+
+$OKButton = New-Object System.Windows.Forms.Button
+$OKButton.Location = New-Object System.Drawing.Point(280,70)
+$OKButton.Size = New-Object System.Drawing.Size(75,30)
+$OKButton.Text = 'OK'
+$OKButton.DialogResult = [System.Windows.Forms.DialogResult]::OK
+$form.AcceptButton = $OKButton
+$form.Controls.Add($OKButton)
+
+$label = New-Object System.Windows.Forms.Label
+$label.Location = New-Object System.Drawing.Point(10,20)
+$label.Size = New-Object System.Drawing.Size(300,50)
+$label.Text = 'Please select the Taskbar shortcuts the User should be able to delete:'
+$form.Controls.Add($label)
+
+$listBox = New-Object System.Windows.Forms.Listbox
+$listBox.Location = New-Object System.Drawing.Point(10,70)
+$listBox.Size = New-Object System.Drawing.Size(260,20)
+
+$listBox.SelectionMode = 'MultiExtended'
+
+foreach ($link in $links){
+    [void] $listBox.Items.Add("$($link)")
+}
+
+foreach ($app in $apps){
+    [void] $listBox.Items.Add("$($app)")
+}
+
+$listBox.Height = 500
+$form.Controls.Add($listBox)
+$form.Topmost = $true
+
+$result = $form.ShowDialog()
+
+if ($result -eq [System.Windows.Forms.DialogResult]::OK)
+{
+    $deletable = $listBox.SelectedItems
+}
+
 # ------------------------------------------------- Create the XML File
 
 # Create the XML file
@@ -231,6 +277,7 @@ foreach($app in $apps){
 
     $XmlWriter.WriteStartElement('taskbar:DesktopApp')
     $XmlWriter.WriteAttributeString('DesktopApplicationID', $name.AppID)
+
     $XmlWriter.WriteEndElement()
 }
 
@@ -241,9 +288,14 @@ foreach($link in $links){
     $convertedPath = Convert-PathToEnvVariable -Path $name[0].ShortcutPath
 
     $convertedPath = $convertedPath + $name[0].Arguments
+    if ($deletable -contains $link){
+        $convertedPath = $convertedPath + '" PinGeneration="1'
+    }
 
     $XmlWriter.WriteStartElement('taskbar:DesktopApp')
-    $XmlWriter.WriteAttributeString('DesktopApplicationLinkPath', $convertedPath)
+    if ($deletable -contains $link){
+        $XmlWriter.WriteAttributeString('DesktopApplicationLinkPath', $convertedPath)
+    }
     $XmlWriter.WriteEndElement()
 }
 
@@ -268,3 +320,7 @@ $XmlWriter.WriteEndElement()
 # End the XML document
 $XmlWriter.Flush()
 $XmlWriter.Close()
+
+# ------------------------------------------------- Replace &quot; in XML file for "
+
+(Get-Content "$($xmlfolder)\TaskbarLayoutModification.xml").Replace('&quot;', '"') | Set-Content "$($xmlfolder)\TaskbarLayoutModification.xml"
