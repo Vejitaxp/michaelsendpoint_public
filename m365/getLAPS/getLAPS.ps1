@@ -34,15 +34,16 @@ $result = $form.ShowDialog()
 
 if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 {
-	$module = Get-Module -Name Az.Accounts, Az.Automation
-	if (-not $module)
-	{
-		Install-Module -Name Az.Accounts -Force -AllowClobber -Scope CurrentUser
-		Install-Module -Name Az.Automation -Force -AllowClobber -Scope CurrentUser
+	# Install and/or Import the required modules
+	$required = 'Az.Accounts','Az.Automation'
+	
+	foreach ($name in $required) {
+	  if (-not (Get-Module -ListAvailable -Name $name)) {
+	    Write-Host "Installing module $name..."
+	    Install-Module -Name $name -Scope CurrentUser -Force -AllowClobber -ErrorAction Stop
+	  }
+	  Import-Module $name -ErrorAction Stop
 	}
-    # Import the required modules
-	Import-module Az.Accounts
-	Import-module Az.Automation
 
 	# Connect to Azure
 	connect-azAccount
@@ -66,4 +67,5 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 elseif ($result -eq [System.Windows.Forms.DialogResult]::Cancel)
 {
 	$form.Close()
+
 }
