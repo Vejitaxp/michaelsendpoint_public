@@ -25,8 +25,7 @@ To get started, visit my website [https://michaelsendpoint.com](https://michaels
 
 For questions and feedback, contact me on:<br>
 
-[![Connect on LinkedIn]
-(https://michaelsendpoint.com/LinkeddIn.png 'LinkedIn: Michael Frank')](https://www.linkedin.com/in/michael-frank-26b86222b)
+[![Connect on LinkedIn](https://michaelsendpoint.com/LinkeddIn.png 'LinkedIn: Michael Frank')](https://www.linkedin.com/in/michael-frank-26b86222b)
 
 ---
 
