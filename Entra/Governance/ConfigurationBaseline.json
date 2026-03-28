@@ -1,0 +1,35 @@
+{
+  "displayName": "TestBaseline",
+  "description": "Entra Governance Baseline Test",
+  "baseline": {
+    "displayName": "TestBaseline1",
+    "description": "March 27 2026",
+    "parameters": [],
+    "resources": [
+      {
+        "displayName": "MFA enabled for admins",
+        "resourceType": "microsoft.entra.conditionalaccesspolicy",
+        "properties": {
+          "DisplayName": "MFA enabled for admins",
+          "State": "enabled",
+          "GrantControlOperator": "AND",
+          "ApplicationEnforcedRestrictionsIsEnabled": false,
+          "CloudAppSecurityIsEnabled": false,
+          "SignInFrequencyIsEnabled": false,
+          "PersistentBrowserIsEnabled": false,
+          "AuthenticationStrength": "Multifactor authentication",
+          "Ensure": "Present",
+          "IncludeApplications": [
+            "all"
+          ],
+          "ExcludeApplications": [],
+          "IncludeRoles": [
+            "62e90394-69f5-4237-9190-012177145e10"
+          ],
+          "ExcludeRoles": []
+        }
+      }
+    ]
+  },
+  "parameters": {}
+}
