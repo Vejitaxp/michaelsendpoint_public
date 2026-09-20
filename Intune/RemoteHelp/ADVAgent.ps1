@@ -33,7 +33,11 @@ foreach ($job in $jobs) {
     Receive-Job -Job $job
 }
 
+Write-Host "Downloads finished"
+
 $files = Get-ChildItem -Path .\*.msi
+
+Write-Host "Installation started..."
 
 Foreach ($file in $files) {
   $DataStamp = get-date -Format yyyyMMddTHHmmss
@@ -49,6 +53,10 @@ Foreach ($file in $files) {
   Start-Process "msiexec.exe" -ArgumentList $MSIArguments -Wait -NoNewWindow 
 }
 
+Write-Host "Installation finished"
+
 Move-Item -Path .\*.log -Destination "C:\ProgramData\Microsoft\IntuneManagementExtension\Logs"
 
-Remove-Item $Location -force
+Set-Location "C:\"
+
+Remove-Item $Location -recurse
