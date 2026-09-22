@@ -1,7 +1,28 @@
+<#PSScriptInfo
+    .VERSION
+        1.0.0
+    .AUTHOR
+        Michael Frank
+    .COMPANYNAME
+        michaelsendpoint.com
+    .Name
+        InstallAVDAgent.ps1
+    .SYNOPSIS
+        Download and install the Azure Virtual Desktop Agent & Azure Virtual Desktop Agent Bootloader.
+    .creationdate
+        22.09.2026
+    .lasteditdate
+        22.09.2026
+#>
+
+# ------------------------------------------------- Parameter --------------------------------------------------------------
+
 $Location = "C:\AVDDownload"
 $links = (Invoke-WebRequest -Uri "https://learn.microsoft.com/en-gb/intune/remote-help/deploy?tabs=windows#configure-remote-help-apps").Links                                                                  
 $AVD = $links | where-object {$_.outerHTML -like "*Azure Virtual Desktop*"} | Get-Unique | Select-Object href                                
 $BOOT = $links | where-object {$_.outerHTML -like "*Azure Virtual Desktop Agent Bootloader*"} | Get-Unique | Select-Object href
+
+# ------------------------------------------------- Download ---------------------------------------------------------------
 
 New-Item -type Directory $Location
 Set-Location $Location
@@ -35,6 +56,8 @@ foreach ($job in $jobs) {
 
 Write-Host "Downloads finished"
 
+# ------------------------------------------------- Installation ------------------------------------------------------------
+
 $files = Get-ChildItem -Path .\*.msi
 
 Write-Host "Install started..."
@@ -54,6 +77,8 @@ Foreach ($file in $files) {
 }
 
 Write-Host "Install finished"
+
+# ------------------------------------------------- Move logs --------------------------------------------------------------
 
 Move-Item -Path .\*.log -Destination "C:\ProgramData\Microsoft\IntuneManagementExtension\Logs"
 
