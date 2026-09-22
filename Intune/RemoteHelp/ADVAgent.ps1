@@ -37,7 +37,7 @@ Write-Host "Downloads finished"
 
 $files = Get-ChildItem -Path .\*.msi
 
-Write-Host "Installation started..."
+Write-Host "Install started..."
 
 Foreach ($file in $files) {
   $DataStamp = get-date -Format yyyyMMddTHHmmss
@@ -53,7 +53,7 @@ Foreach ($file in $files) {
   Start-Process "msiexec.exe" -ArgumentList $MSIArguments -Wait -NoNewWindow 
 }
 
-Write-Host "Installation finished"
+Write-Host "Install finished"
 
 Move-Item -Path .\*.log -Destination "C:\ProgramData\Microsoft\IntuneManagementExtension\Logs"
 
