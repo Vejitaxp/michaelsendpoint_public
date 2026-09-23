@@ -1,6 +1,6 @@
 <#PSScriptInfo
     .VERSION
-        1.0.0
+        1.1.0
     .AUTHOR
         Michael Frank
     .COMPANYNAME
@@ -12,15 +12,29 @@
     .creationdate
         22.09.2026
     .lasteditdate
-        22.09.2026
+        23.09.2026
 #>
+
+# Force TLS 1.2 and suppress GUI progress output to maximize download speed in PS 5.1
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+$ProgressPreference = 'SilentlyContinue'
 
 # ------------------------------------------------- Parameter --------------------------------------------------------------
 
 $Location = "C:\AVDDownload"
-$links = (Invoke-WebRequest -Uri "https://learn.microsoft.com/en-gb/intune/remote-help/deploy?tabs=windows#configure-remote-help-apps").Links                                                                  
-$AVD = $links | where-object {$_.outerHTML -like "*Azure Virtual Desktop*"} | Get-Unique | Select-Object href                                
-$BOOT = $links | where-object {$_.outerHTML -like "*Azure Virtual Desktop Agent Bootloader*"} | Get-Unique | Select-Object href
+$Uri = "https://learn.microsoft.com/en-gb/intune/remote-help/deploy?tabs=windows#configure-remote-help-apps"
+
+# ------------------------------------------------- Get Download Links -----------------------------------------------------
+
+# Request raw HTML with BasicParsing (no IE dependency)
+$webResponse = Invoke-WebRequest -Uri $Uri -UseBasicParsing
+
+# Extract MSI links using RegEx directly from raw HTML
+$avdMatch  = [regex]::Match($webResponse.Content, 'href="([^"]+)"[^>]*>Azure Virtual Desktop Agent<\/a>')
+$bootMatch = [regex]::Match($webResponse.Content, 'href="([^"]+)"[^>]*>Azure Virtual Desktop Agent Bootloader<\/a>')
+
+$AVDUri  = $avdMatch.Groups[1].Value
+$BootUri = $bootMatch.Groups[1].Value
 
 # ------------------------------------------------- Download ---------------------------------------------------------------
 
@@ -29,32 +43,23 @@ Set-Location $Location
 
 $files = @(
     @{
-        Uri = $AVD.href
+        Uri = $AVDUri
         OutFile = 'AzureVirtualDesktopAgent.msi'
     },
     @{
-        Uri = $BOOT.href
+        Uri = $BootUri
         OutFile = 'AzureVirtualDesktopAgentBootloader.msi'
     }
 )
 
-$jobs = @()
+Write-Host "Downloads started..."
 
 foreach ($file in $files) {
-    $jobs += Start-ThreadJob -Name $file.OutFile -ScriptBlock {
-        $params = $Using:file
-        Invoke-WebRequest @params
-    }
+    Write-Host "Downloading $($file.OutFile)..."
+    Invoke-WebRequest -Uri $file.Uri -OutFile $file.OutFile -UseBasicParsing
 }
 
-Write-Host "Downloads started..."
-Wait-Job -Job $jobs
-
-foreach ($job in $jobs) {
-    Receive-Job -Job $job
-}
-
-Write-Host "Downloads finished"
+Write-Host "Downloads finished."
 
 # ------------------------------------------------- Installation ------------------------------------------------------------
 
